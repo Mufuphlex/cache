@@ -37,7 +37,7 @@ class DecoratorGuardedTest extends \PHPUnit_Framework_TestCase
 
     private function getCacheMock()
     {
-        return static::createMock('\Mufuphlex\Cache\CacheInterface');
+        return static::getMock('\Mufuphlex\Cache\CacheInterface');
     }
 
     private function getCacheMockWithMethod($cache, $method, $arg = null, $callCount = 1)
@@ -55,7 +55,7 @@ class DecoratorGuardedTest extends \PHPUnit_Framework_TestCase
 
     private function getGuardMock()
     {
-        return static::createMock('\Mufuphlex\Cache\GuardInterface');
+        return static::getMock('\Mufuphlex\Cache\GuardInterface');
     }
 
     private function getDecorator($cache, $guard = null)

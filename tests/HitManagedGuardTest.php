@@ -20,6 +20,6 @@ class HitManagedGuardTest extends GuardAbstractTest
 
     private function getHitManager()
     {
-        return static::createMock('\Mufuphlex\Cache\HitManagerInterface');
+        return static::getMock('\Mufuphlex\Cache\HitManagerInterface');
     }
 }

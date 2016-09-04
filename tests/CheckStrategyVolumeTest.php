@@ -81,7 +81,7 @@ class CheckStrategyVolumeTest extends TestCase
 
     private function getCache()
     {
-        return static::createMock('\Mufuphlex\Cache\MeasurableCacheInterface');
+        return static::getMock('\Mufuphlex\Cache\MeasurableCacheInterface');
     }
 
     private function falseCheck1()

@@ -6,7 +6,7 @@ abstract class CacheTestCase extends TestCase
 {
     protected function getHitManagerMock()
     {
-        return static::createMock('\Mufuphlex\Cache\HitManagerInterface');
+        return static::getMock('\Mufuphlex\Cache\HitManagerInterface');
     }
 
     protected function getCacheInitialMock()

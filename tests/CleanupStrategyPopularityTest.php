@@ -35,7 +35,7 @@ class CleanupStrategyPopularityTest extends CacheTestCase
         $hitManager = $this->getHitManagerMock();
         $strategy = new Popularity($hitManager);
         $cache = $this->getCacheInitialMock();
-        $checkStrategy = static::createMock('\Mufuphlex\Cache\CheckStrategyInterface');
+        $checkStrategy = static::getMock('\Mufuphlex\Cache\CheckStrategyInterface');
         $strategy->cleanup($cache, $checkStrategy);
     }
 
